@@ -2,7 +2,7 @@ package compliments
 
 import "math/rand"
 
-var compliments = []string{
+var complimentsForWomen = []string{
 	"Ти прекрасна!",
 	"Твої очі, як зорі.",
 	"Ти світишся як сонце!",
@@ -10,6 +10,18 @@ var compliments = []string{
 	"Ти дивовижна!",
 }
 
+var complimentsForMen = []string{
+	"Ти справжній чоловік!",
+	"Твоя впевненість вражає!",
+	"Ти завжди такий розумний!",
+	"Твоя сміливість надихає!",
+	"Ти неймовірно харизматичний!",
+}
+
 func ComplimentForWomen() string {
-	return compliments[rand.Intn(len(compliments))]
+	return complimentsForWomen[rand.Intn(len(complimentsForWomen))]
+}
+
+func ComplimentForMen() string {
+	return complimentsForMen[rand.Intn(len(complimentsForMen))]
 }
